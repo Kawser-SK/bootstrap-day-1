@@ -1,40 +1,97 @@
-   /**
+/**
 * Bootstrap Lyout || PSD TO HTML 
 * Author: KAWSER AHAMED
 * version: 0.0.1
 * Date: 06-04-2021
 **/
 
+
 /* ============================
         DEFULTE CSS
  ============================ */
- #accordion{
-    background: rgba(38, 161, 75, 0.63);
- }
-.slider{
-   background: rgba(38, 161, 75, 0.63);
+
+ header button {
+	color: lavender;
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+header .btn:hover {
+	color: rgb(128 135 143) !important;
+	transition: .4s;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	color: #97d700;
+	background-color: rgba(19, 17, 17, 0.571);
+}
+
+.carousel {
+	width: 100% !important;
+}
+
+.carousel img {
+	height: 90vh !important;
+	object-fit: cover;
 }
 
 
+/* card-section  */
+
+.card-section {
+	padding: 10px 0 50px 0;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	transition: .4s;
+}
+
+#accordion {
+	background: rgba(28, 42, 32, 0.63);
+}
+
+.slider,
+.collaps-section {
+	background: rgba(30, 44, 34, 0.63);
+}
 
 
- /* ======= Accordion-2======= */
+/* ======= Accordion-2======= */
 
-
+.accordion-btn-2 .accordion-button:not(.collapsed)::after {
+	background-image: url("../img/minus-solid.svg");
+}
 
 .accordion-btn-2 .accordion-button::after {
-   background-image: url(../img/plus-solid.svg);
-}
-.accordion-btn-2 .accordion-button:not(.collapsed)::after {
-   background-image: url(../img/minus-solid.svg);
+	background-image: url("../img/plus-solid.svg");
 }
 
 .btn .badge {
-   position: relative;
-   top: -18px;
-   left: 23px;
-   border-radius: 1.25rem;
-   background-color: #e50505!important;
+	position: relative;
+	top: -17px;
+	left: 15px;
+	border-radius: 2.25rem;
+	background-color: #e50505!important;
 }
 
 
+.badge {
+	padding: .35em 0.55em;
+	font-size: .75em;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
+
+button i {
+	font-size: 21px;
+	margin-left: 10px;
+}
